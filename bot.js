@@ -79,11 +79,6 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (/(https?://)?(www.)?(discord.(gg|li|me|io)|discordapp.com/invite)/.+/.test(msg.content)) return msg.delete()
-  .then(() => msg.reply('Reklam Yapmamalisin'));
-  });
-
-client.on('message', msg => {
   if (msg.content === './tts') {
    msg.delete(30)
     msg.reply('**Yazı Engellendi**');
@@ -125,6 +120,11 @@ client.elevation = message => {
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };
+
+client.on('message', msg => {
+  if (/(https?://)?(www.)?(discord.(gg|li|me|io)|discordapp.com/invite)/.+/.test(msg.content)) return msg.delete()
+  .then(() => msg.reply('Reklam Yapmamalisin'));
+  });
 
 client.on('message', msg => {
   if (msg.content === 'sg') {
