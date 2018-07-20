@@ -122,9 +122,9 @@ client.elevation = message => {
 };
 
 client.on('message', msg => {
-  if (msg.content === 'https?://)?(www.)?(discord.(gg|li|me|io)|discordapp.com/invite') {
+  if (msg.content === 'pic|oc|oç|amk|amcık|yarrak kafali|yarrak kafalı') {
    msg.delete(30)
-    msg.reply('**Reklam Engellendi**');
+    msg.reply('**Küfür Engellendi**');
   }
 })
 
