@@ -122,8 +122,9 @@ client.elevation = message => {
 };
 
 client.on('message', msg => {
-  if (/(https?://)?(www.)?(discord.(gg|li|me|io)|discordapp.com/invite)/.+/.test(msg.content)) return msg.delete()
-  .then(() => msg.reply('Reklam Yapmamalisin'));
+  if (msg.content === 'https?://)?(www.)?(discord.(gg|li|me|io)|discordapp.com/invite') {
+   msg.delete(30)
+    msg.reply('**Reklam Engellendi**');
   }
 })
 
