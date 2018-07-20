@@ -284,7 +284,7 @@ client.on('message', msg => {
 });
 
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'pasa');
+  const channel = member.guild.channels.find('name', 'ɢᴇɴᴇʟ-ꜱᴏʜʙᴇᴛ');
   if (!channel) return;
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -296,7 +296,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find('name', pasa');
+  const channel = member.guild.channels.find('name', ɢᴇɴᴇʟ-ꜱᴏʜʙᴇᴛ');
   if (!channel) return;
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
