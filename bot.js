@@ -281,6 +281,7 @@ client.on('message', msg => {
    msg.delete(30)
     msg.reply('**Kufur Engellendi**');
   }
+
 });
 
 client.on('guildMemberAdd', member => {
